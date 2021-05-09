@@ -15,7 +15,7 @@ public class rotation : MonoBehaviour
         switch (direction)
         {
             case 0:
-                convert = sphereOne.transform.up;
+                convert = sphereOne.transform.up + sphereOne.transform.forward;
                 velocity = 300;
                 break;
             case 1:
@@ -23,7 +23,7 @@ public class rotation : MonoBehaviour
                 velocity = 100;
                 break;
             case 2:
-                convert = sphereOne.transform.up;
+                convert = sphereOne.transform.up + sphereOne.transform.forward;
                 velocity = 150;
                 break;
             case 3:

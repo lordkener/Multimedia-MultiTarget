@@ -4,10 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: SaturnRings
-  m_Shader: {fileID: 4800000, guid: 0bedcb26456f2ca409c6a23f2718da3a, type: 3}
+  m_Shader: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHABLEND_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -19,7 +20,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 15ed8f382b5a3d442a0e42d26aaefa5a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CityLightMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudMap:
+        m_Texture: {fileID: 2800000, guid: f5a5135fd2ea45648aaca7d609f39789, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -66,9 +75,17 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AtmosphereDensity: 0
     - _Bands: 8
     - _BumpScale: 1
+    - _CityLightIntensity: 0
+    - _CloudMapSpecularity: 0
+    - _CloudPanSpeed: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
@@ -76,6 +93,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _LightStretch: 0
     - _Metallic: 0
     - _Mode: 2
     - _OcclusionStrength: 1
@@ -84,6 +102,8 @@ Material:
     - _Parallax: 0.02
     - _RingLighten: 0.59
     - _RingThickness: 2.77
+    - _Shininess: 0.078125
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Specularity: 0
@@ -93,7 +113,10 @@ Material:
     - _node_6657: 1
     m_Colors:
     - _AmbientLight: {r: 0, g: 0, b: 0, a: 1}
+    - _AtmosphereColor: {r: 0.4411765, g: 0.6300204, b: 1, a: 1}
+    - _CityLightColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 0.97018254, b: 0.8455882, a: 1}
     - _EmissionColor: {r: 0.22794116, g: 0.22354878, b: 0.16425171, a: 1}
     - _TextureColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
     - _node_2966: {r: 0.2655172, g: 0.19842014, b: 0.15423426, a: 1}
+  m_BuildTextureStacks: []
